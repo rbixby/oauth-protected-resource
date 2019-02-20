@@ -1,5 +1,9 @@
+#Make artifacts
+artifact.zip
+
+# VS Code settings
+.vscode/
+
 #virtual environments
 venv/
 virtualenv/
-
-artifact.zip
