@@ -1,0 +1,5 @@
+flake8
+Flask
+Flask-RESTful
+flask-talisman
+redis>=3.0.1,<4.0
