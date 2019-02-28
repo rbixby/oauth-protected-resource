@@ -14,11 +14,17 @@ import gzip
 
 
 def create_app():
+    config = get_config()
     app = Flask(__name__)
 
     Talisman(app, force_https=False)
 
     api = Api(app, catch_all_404s=True)
+
+    app.config['redis'] = redis.StrictRedis(
+        decode_responses=True,
+        host=config['REDIS_HOST'],
+        port=config['REDIS_PORT'])
 
     add_resources(api)
 
