@@ -1,6 +1,6 @@
 #virtual environments
 venv/
 virtualenv/
-.vscode/*
+.vscode/settings.json
 
 artifact.zip
